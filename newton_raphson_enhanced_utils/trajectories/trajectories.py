@@ -71,7 +71,7 @@ def hover(t_traj: float, ctx: TrajContext) -> RETURN_TYPE:
 
     hover_dict = {
         1: jnp.array([0.0, 0.0, -0.9, 0.0]),
-        2: jnp.array([0.0, 0.8, -0.8, 0.0]),
+        2: jnp.array([0.0, 0.8, -0.9, 0.0]),
         3: jnp.array([0.8, 0.0, -0.8, 0.0]),
         4: jnp.array([0.8, 0.8, -0.8, 0.0]),
         5: jnp.array([0.0, 0.0, -10.0, 0.0]),
