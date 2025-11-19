@@ -29,8 +29,16 @@ from newton_raphson_enhanced_utils.jax_utils import jit
 import numpy as np
 from dataclasses import dataclass
 from typing import Tuple, Optional, Union
-from enum import StrEnum
 
+import enum
+try:
+    # Python 3.11+
+    from enum import StrEnum  # type: ignore[attr-defined]
+except ImportError:
+    # Python 3.10 fallback
+    class StrEnum(str, enum.Enum):
+        """Minimal StrEnum compatible with stdlib’s StrEnum."""
+        pass
 
 
 @dataclass(frozen=True)
