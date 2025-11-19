@@ -99,7 +99,7 @@ class OffboardControl(Node):
 
 
         # --- Set up Logging Arrays ---
-        if not self.pyjoules_on:
+        if True:
             print("Data logging is ON because pyJoules logging is OFF")
             self.data_log_timer_period = .1
             self.first_log = True
