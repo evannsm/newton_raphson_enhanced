@@ -222,14 +222,14 @@ class OffboardControl(Node):
         self.T0 = time.time()
         self.program_time: float = 0.0
         self.cushion_period = 10.0
-        self.flight_period = 15.0
+        self.flight_period = 30.0
         self.land_time = self.flight_period + 2 * self.cushion_period
         self.flight_phase = self.get_phase()
         print(f"Flight time: {self.land_time}s")
 
 
         # ----------------------- Initialize Control --------------------------
-        self.HOVER_HEIGHT = 3.0 if self.sim else 0.9
+        self.HOVER_HEIGHT = 3.0 if self.sim else 0.7
         self.LAND_HEIGHT = 0.6 if self.sim else 0.45
 
         # Trajectory tracking

@@ -56,6 +56,25 @@ ros2 run newton_raphson_enhanced run --platform sim --trajectory triangle --doub
 
 ---
 
+## SIMULATION - Double Speed (With PyJoules)
+
+```bash
+ros2 run newton_raphson_enhanced run --platform sim --trajectory hover --double-speed --hover-mode 6 --pyjoules --log-file sim_nr_enh_hover_2x_pyj.csv
+ros2 run newton_raphson_enhanced run --platform sim --trajectory yaw_only --double-speed --pyjoules --log-file sim_nr_enh_yaw_only_2x_pyj.csv
+ros2 run newton_raphson_enhanced run --platform sim --trajectory circle_horz --double-speed --pyjoules --log-file sim_nr_enh_circle_horz_2x_pyj.csv
+ros2 run newton_raphson_enhanced run --platform sim --trajectory circle_horz --double-speed --spin --pyjoules --log-file sim_nr_enh_circle_horz_2x_spin_pyj.csv
+ros2 run newton_raphson_enhanced run --platform sim --trajectory circle_vert --double-speed --pyjoules --log-file sim_nr_enh_circle_vert_2x_pyj.csv
+ros2 run newton_raphson_enhanced run --platform sim --trajectory fig8_horz --double-speed --pyjoules --log-file sim_nr_enh_fig8_horz_2x_pyj.csv
+ros2 run newton_raphson_enhanced run --platform sim --trajectory fig8_vert --double-speed --pyjoules --log-file sim_nr_enh_fig8_vert_2x_pyj.csv
+ros2 run newton_raphson_enhanced run --platform sim --trajectory fig8_vert --double-speed --short --pyjoules --log-file sim_nr_enh_fig8_vert_2x_short_pyj.csv
+ros2 run newton_raphson_enhanced run --platform sim --trajectory helix --double-speed --pyjoules --log-file sim_nr_enh_helix_2x_pyj.csv
+ros2 run newton_raphson_enhanced run --platform sim --trajectory helix --double-speed --spin --pyjoules --log-file sim_nr_enh_helix_2x_spin_pyj.csv
+ros2 run newton_raphson_enhanced run --platform sim --trajectory sawtooth --double-speed --pyjoules --log-file sim_nr_enh_sawtooth_2x_pyj.csv
+ros2 run newton_raphson_enhanced run --platform sim --trajectory triangle --double-speed --pyjoules --log-file sim_nr_enh_triangle_2x_pyj.csv
+```
+
+---
+
 ## HARDWARE - Double Speed (No PyJoules)
 
 ```bash
@@ -75,24 +94,6 @@ ros2 run newton_raphson_enhanced run --platform hw --trajectory triangle --doubl
 
 ---
 
-## SIMULATION - Double Speed (With PyJoules)
-
-```bash
-ros2 run newton_raphson_enhanced run --platform sim --trajectory hover --double-speed --hover-mode 6 --pyjoules --log-file sim_nr_enh_hover_2x_pyj.csv
-ros2 run newton_raphson_enhanced run --platform sim --trajectory yaw_only --double-speed --pyjoules --log-file sim_nr_enh_yaw_only_2x_pyj.csv
-ros2 run newton_raphson_enhanced run --platform sim --trajectory circle_horz --double-speed --pyjoules --log-file sim_nr_enh_circle_horz_2x_pyj.csv
-ros2 run newton_raphson_enhanced run --platform sim --trajectory circle_horz --double-speed --spin --pyjoules --log-file sim_nr_enh_circle_horz_2x_spin_pyj.csv
-ros2 run newton_raphson_enhanced run --platform sim --trajectory circle_vert --double-speed --pyjoules --log-file sim_nr_enh_circle_vert_2x_pyj.csv
-ros2 run newton_raphson_enhanced run --platform sim --trajectory fig8_horz --double-speed --pyjoules --log-file sim_nr_enh_fig8_horz_2x_pyj.csv
-ros2 run newton_raphson_enhanced run --platform sim --trajectory fig8_vert --double-speed --pyjoules --log-file sim_nr_enh_fig8_vert_2x_pyj.csv
-ros2 run newton_raphson_enhanced run --platform sim --trajectory fig8_vert --double-speed --short --pyjoules --log-file sim_nr_enh_fig8_vert_2x_short_pyj.csv
-ros2 run newton_raphson_enhanced run --platform sim --trajectory helix --double-speed --pyjoules --log-file sim_nr_enh_helix_2x_pyj.csv
-ros2 run newton_raphson_enhanced run --platform sim --trajectory helix --double-speed --spin --pyjoules --log-file sim_nr_enh_helix_2x_spin_pyj.csv
-ros2 run newton_raphson_enhanced run --platform sim --trajectory sawtooth --double-speed --pyjoules --log-file sim_nr_enh_sawtooth_2x_pyj.csv
-ros2 run newton_raphson_enhanced run --platform sim --trajectory triangle --double-speed --pyjoules --log-file sim_nr_enh_triangle_2x_pyj.csv
-```
-
----
 
 ## HARDWARE - Double Speed (With PyJoules)
 

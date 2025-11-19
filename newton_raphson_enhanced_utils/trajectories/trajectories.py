@@ -331,7 +331,7 @@ def sawtooth(t_traj: float, ctx: TrajContext) -> RETURN_TYPE:
 def triangle(t_traj: float, ctx: TrajContext) -> RETURN_TYPE:
     """Returns an equilateral triangle reference trajectory."""
     height = HARDWARE_HEIGHT if not ctx.sim else SIM_HEIGHT
-    side_length = 0.6
+    side_length = 0.8
     flight_time = 60.0
     num_repeats = 2 if ctx.double_speed else 1
     period_spin = 20.0
