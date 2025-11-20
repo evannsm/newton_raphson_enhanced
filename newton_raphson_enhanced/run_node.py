@@ -142,7 +142,7 @@ def main():
     print(f"Spin:          {'Enabled (circle_horz, helix)' if spin else 'Disabled'}")
     print(f"Log File:      {log_file}")
     print("="*60 + "\n")
-    exit(0)
+    # exit(0)
 
     rclpy.init(args=None)
     offboard_control_node = OffboardControl(
