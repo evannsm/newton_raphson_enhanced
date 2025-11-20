@@ -69,7 +69,7 @@ def create_parser():
 
     parser.add_argument(
         '--double-speed',
-        action='store_false',
+        action='store_true',
         help='Use double speed (2x) for trajectories'
     )
 
@@ -142,6 +142,7 @@ def main():
     print(f"Spin:          {'Enabled (circle_horz, helix)' if spin else 'Disabled'}")
     print(f"Log File:      {log_file}")
     print("="*60 + "\n")
+    exit(0)
 
     rclpy.init(args=None)
     offboard_control_node = OffboardControl(
